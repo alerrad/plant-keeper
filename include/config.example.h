@@ -14,8 +14,8 @@ const struct MOISTURE_SENSOR {
 
 // Max and min values of Water sensor (might be different for everyone)
 const struct WATER_LEVEL_SENSOR {
-    constexpr static const float MIN_VALUE = 0.5;
-    constexpr static const float MAX_VALUE = 4;
+    constexpr static const float MIN_DEPTH = 2;
+    constexpr static const float MAX_DEPTH = 5.2;
 };
 
 // Change to your WIFI info

@@ -14,7 +14,7 @@
 
 BlynkTimer timer;
 MoistureSensor moistureSensor(A0, MOISTURE_SENSOR::AIR_VALUE, MOISTURE_SENSOR::WATER_VALUE);
-WaterSensor waterSensor(D6, D7, WATER_LEVEL_SENSOR::MIN_VALUE, WATER_LEVEL_SENSOR::MAX_VALUE);
+WaterSensor waterSensor(D6, D7, WATER_LEVEL_SENSOR::MIN_DEPTH, WATER_LEVEL_SENSOR::MAX_DEPTH);
 OledDisplay oled;
 WaterPump waterPump(D5);
 
