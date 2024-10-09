@@ -24,6 +24,6 @@ void OledDisplay::displayMeasurements(uint8_t water_level, uint8_t moisture_leve
     _display.clearDisplay();
     _display.setTextSize(1, 2);
     _display.setCursor(0, 0);
-    _display.printf("Water lvl: %d%%\nMoisture lvl: %d%%\nStatus: %s", water_level, moisture_level, "online");
+    _display.printf("Water lvl: %d%%\nMoisture lvl: %d%%\nStatus: %s", water_level, moisture_level, status);
     _display.display();
 }
