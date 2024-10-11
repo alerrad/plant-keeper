@@ -20,8 +20,8 @@ const struct WATER_LEVEL_SENSOR {
 
 // Change to your WIFI info
 const struct WIFI_CONF {
-    constexpr static char* uuid = "";
-    constexpr static const char* pass = "";
+    constexpr static const char* SSID = "";
+    constexpr static const char* PASS = "";
 };
 
 // Threshold moisture percentage at which pump turns on
