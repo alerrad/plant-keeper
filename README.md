@@ -16,9 +16,7 @@ Parts used:
 - Jumper wires
 
 Schematic:
-```
-Insert photo here.
-```
+![](./img/wiring-schema.png)
 
 ## Logic
 
