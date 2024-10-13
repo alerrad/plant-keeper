@@ -15,12 +15,22 @@ Parts used:
 - Submersible water-pump (x1)
 - Jumper wires
 
-Schematic:
+### Schematic:
 ![](./img/wiring-schema.png)
 
 ## Logic
 
 Automatically waters the plant, once the moisture sensor reaches threshold percetage. All you need is displayed on OLED display and also on the blynk console. You can also control the pump via pressing the button on blynk console. Once the container is empty, status is updated to "container empty" and the whole thing starts running on "just display all readings" mode.
+
+## Running locally
+
+1. Clone this repo ```git clone https://github.com/alerrad/plant-keeper.git```
+2. Open the folder in vscode with pre-installed "platformIO" extention
+3. Create __config.h__ file inside __include__ folder and configure it
+4. Assemble and wire all the parts together as shown in schematic
+5. Build the project (ctrl + alt + b)
+6. Connect your ESP board via usb and upload the build (ctrl + alt + u)
+7. Enjoy! ✨
 
 ## License
 
