@@ -16,7 +16,7 @@ void OledDisplay::connectingWiFi() {
     _display.clearDisplay();
     _display.setCursor(0, 2);
     _display.setTextSize(2);
-    _display.print("Connecting\nto WiFi...");
+    _display.print(F("Connecting\nto WiFi..."));
     _display.display();
 }
 
@@ -24,6 +24,6 @@ void OledDisplay::displayMeasurements(uint8_t water_level, uint8_t moisture_leve
     _display.clearDisplay();
     _display.setTextSize(1, 2);
     _display.setCursor(0, 0);
-    _display.printf("Water lvl: %d%%\nMoisture lvl: %d%%\nStatus: %s", water_level, moisture_level, status);
+    _display.printf("Water lvl: %d%%\nMoisture lvl: %d%%\nStatus: %s", water_level, moisture_level, status.c_str());
     _display.display();
 }
