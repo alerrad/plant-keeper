@@ -24,7 +24,7 @@ const struct WIFI_CONF {
     constexpr static const char* PASS = "";
 };
 
-// Threshold moisture percentage at which pump turns on
-#define MOISTURE_THRESHOLD_PERC 30
+#define MOISTURE_THRESHOLD_PERC 30 // Threshold moisture percentage at which pump turns on
+#define WATER_LEVEL_THRESHOLD_PERC 20 // Least amount of water needed for a pump to work
 
 #endif

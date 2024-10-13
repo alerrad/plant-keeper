@@ -24,7 +24,7 @@ BLYNK_CONNECTED() {
   // Blynk.syncAll();
 }
 BLYNK_WRITE(V3) {
-  if (param.asInt())
+  if (param.asInt() && waterSensor.getWaterLevel() > WATER_LEVEL_THRESHOLD_PERC)
     digitalWrite(D5, HIGH);
   else
     digitalWrite(D5, LOW);
@@ -33,6 +33,7 @@ BLYNK_WRITE(V3) {
 void sensorReadingsTimer() {
   uint8_t moisture_lvl = moistureSensor.getMoistureLevel();
   uint8_t water_lvl = waterSensor.getWaterLevel();
+  
   oled.displayMeasurements(water_lvl, moisture_lvl, "online");
   Blynk.virtualWrite(V0, moisture_lvl);
   Blynk.virtualWrite(V1, water_lvl);
