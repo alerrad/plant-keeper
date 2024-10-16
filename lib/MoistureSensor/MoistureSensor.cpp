@@ -13,5 +13,5 @@ void MoistureSensor::begin() {
 /// @returns moisture level in percentage (0 - 100)
 uint8_t MoistureSensor::getMoistureLevel() {
     int reading = analogRead(_pin);
-    return map(reading, _air_value, _water_value, 100, 0);
+    return map(reading, _water_value, _air_value, 100, 0);
 }

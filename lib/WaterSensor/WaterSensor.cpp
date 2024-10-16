@@ -24,5 +24,5 @@ float WaterSensor::getDepthCm() {
 /// @returns water level in percentage (0 - 100)
 uint8_t WaterSensor::getWaterLevel() {
     float depth = getDepthCm();
-    return map(depth, _min_dist, _max_dist, 0, 100);
+    return map(depth, _min_dist, _max_dist, 100, 0);
 }
