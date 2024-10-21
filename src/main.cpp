@@ -16,7 +16,7 @@ BlynkTimer timer;
 MoistureSensor moistureSensor(A0, MOISTURE_SENSOR::AIR_VALUE, MOISTURE_SENSOR::WATER_VALUE);
 WaterSensor waterSensor(D6, D7, WATER_LEVEL_SENSOR::MIN_DEPTH, WATER_LEVEL_SENSOR::MAX_DEPTH);
 OledDisplay oled;
-WaterPump waterPump(D5);
+WaterPump waterPump(D5, D4);
 
 // Blynk dashboard button
 BLYNK_CONNECTED() {
@@ -67,6 +67,7 @@ void setup() {
 }
 
 void loop() {
+  waterPump.sync_button();
   timer.run();
   Blynk.run();
 }

@@ -2,10 +2,12 @@
 
 class WaterPump {
 private:
-    const int _pin;
+    int _pump_pin;
+    int _button_pin;
 public:
-    WaterPump(int pin);
+    WaterPump(int pump_pin, int button_pin);
 
     void begin();
     void turnOn(int secs);
+    void sync_button();
 };
