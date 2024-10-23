@@ -51,7 +51,9 @@ void sensorReadingsTimer() {
 
   if (moisture_lvl <= MOISTURE_THRESHOLD_PERC && water_lvl > WATER_LEVEL_THRESHOLD_PERC) {
     oled.displayMeasurements(water_lvl, moisture_lvl, "watering");
+    Blynk.virtualWrite(V3, HIGH);
     waterPump.turnOn(10);
+    Blynk.virtualWrite(V3, LOW);
   }
 }
 
