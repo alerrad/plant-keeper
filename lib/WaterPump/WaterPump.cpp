@@ -25,10 +25,13 @@ void WaterPump::turnOn(int secs) {
 
 void WaterPump::syncButton() {
     if (_button_enabled) {
-        if (digitalRead(_button_pin) == HIGH)
+        if (digitalRead(_button_pin) == HIGH) {
+            blockBlynkButton();
             digitalWrite(_pump_pin, HIGH);
-        else
+        } else {
             digitalWrite(_pump_pin, LOW);
+            unblockBlynkButton();
+        }
     }
 }
 
