@@ -2,8 +2,8 @@
 
 class WaterSensor {
 private:
-    float _min_dist = 0.5;
-    float _max_dist = 3.2;
+    float _min_dist;
+    float _max_dist;
     int _trig_pin;
     int _echo_pin;
 public:
