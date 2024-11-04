@@ -1,4 +1,4 @@
-# Plant-keeper
+# Plant-keeper 🌿
 
 Yet another fun little IoT project. As the name suggests, it's an automated device that can take care of your plants! Inspired by many other YT videos on this topic. The thing is, I couldn't find one who used platformIO for the software part. Also most of them were extremly simple, and in some way not reliable due to cheap/faulty moisture sensors. Therefore, I decided to try it myself.
 
