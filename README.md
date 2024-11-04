@@ -16,11 +16,22 @@ Parts used:
 - Jumper wires
 
 ### Schematic:
-![](./img/wiring-schema.png)
+<img src="./img/wiring-schema.png" width=700/>
 
 ## Logic
 
-Automatically waters the plant, once the moisture sensor reaches threshold percetage. All you need is displayed on OLED display and also on the blynk console. You can also control the pump via pressing the button on blynk console. Once the container is empty, status is updated to "container empty" and the whole thing starts running on "just display all readings" mode.
+Automatically waters the plant, once the moisture sensor reaches threshold percetage. All you need is displayed on OLED display and also on the blynk dashboard. You can also control the pump via pressing the button on blynk console. Once the container is empty, status is updated to "container empty" and the whole thing starts running on "just display all readings" mode.
+
+## Examples
+
+### Web dashboard example
+<img src="./img/web-dashboard.png" width=700>
+
+### Email alert example
+<img src="./img/email-alert.png" width=600/>
+
+### Mobile dashboard example
+<img src="./img/mobile-dashboard.jpg" width=300/>
 
 ## Running locally
 
